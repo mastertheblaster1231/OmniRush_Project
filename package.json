@@ -1,0 +1,32 @@
+{
+  "name": "sih-ocean-project-root",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "node-fetch": "^3.3.2"
+  },
+  "scripts": {
+    "dev": "node scripts/dev-all.mjs",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:all": "node scripts/dev-all.mjs",
+    "build": "npm --prefix frontend run build",
+    "build:frontend": "npm --prefix frontend run build",
+    "preview": "npm --prefix frontend run preview",
+    "preview:frontend": "npm --prefix frontend run preview",
+    "start": "npm --prefix backend start",
+    "start:backend": "npm --prefix backend start",
+    "start:frontend": "npm --prefix frontend run preview",
+    "install:all": "npm install && npm --prefix frontend install && npm --prefix backend install",
+    "clean": "rm -rf frontend/dist backend/dist && echo 'cleaned'",
+    "clean:all": "rm -rf frontend/dist frontend/node_modules/.vite backend/dist && echo 'cleaned'",
+    "lint": "npm --prefix frontend run lint && npm --prefix backend run lint",
+    "lint:fix": "npm --prefix frontend run lint:fix && npm --prefix backend run lint:fix",
+    "check": "npm --prefix backend run check:env && npm --prefix backend run test:endpoints",
+    "test": "npm --prefix backend test"
+  }
+}
