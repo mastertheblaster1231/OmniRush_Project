@@ -1,4 +1,4 @@
-﻿# INCOIS Ocean Visualization — 3D Argo + Tide-Gauge Platform (SIH)
+﻿# Ocean Visualization — 3D Argo + Tide-Gauge Platform 
 
 Real-time 3D ocean visualization using live **INCOIS/IFREMER ERDDAP** data, **GeoServer WFS** tide-gauge stations, and **Three.js** volumetric rendering. No mock/procedural data is used as primary source — all telemetry is fetched from documented live APIs with captured `real_argo_cache.json` as the only offline fallback.
 
